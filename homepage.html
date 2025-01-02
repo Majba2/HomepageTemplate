@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGo Taxi Service</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .navbar {
+            background-color: #f5b70a;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: #fdf6e3;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f5b70a;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .how-it-works {
+            padding: 60px 0;
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .how-it-works .col {
+            text-align: center;
+        }
+
+        .about-us {
+            padding: 60px 0;
+            background-color: #fdf6e3;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .download-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .download-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .download-section p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-section {
+            background-color: #212529;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .blog-section {
+            padding: 60px 0;
+        }
+
+        .blog-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .map-section iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
+footer {
+        background-color: #212529;
+        color: white;
+    }
+
+    footer h5 {
+        font-weight: bold;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer .btn-outline-light {
+        border: 1px solid white;
+    }
+
+    footer .btn-outline-light:hover {
+        background-color: white;
+        color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ride Share</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Earn. Connect. Contribute to Society</h1>
+            <p>Partner with us to drive your own livelihood and more.</p>
+            <button class="btn btn-warning">Sign Up Now</button>
+            <img src="img/2.jpg" alt="Online Ride Sharing Service">
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="row mt-4">
+                <div class="col-md-3 text-center">
+                    <div style="background-color: whitesmoke; border-radius: 50%; width: 70px; height: 70px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img src="img/click.png" style="height: 40px; width: 40px;" alt="tracking">
+                    </div>
+                    <p>Book in Just 2 Tabs</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div style="background-color: whitesmoke; border-radius: 50%; width: 70px; height: 70px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img src="img/driver.png" style="height: 40px; width: 40px;" alt="tracking">
+                    </div>
+                    <p>Get a Driver</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div style="background-color: whitesmoke; border-radius: 50%; width: 70px; height: 70px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img src="img/tracking.png" style="height: 40px; width: 40px;" alt="tracking">
+                    </div>
+                    <p class="mt-3">Track Your Driver</p>
+                </div>                             
+                <div class="col-md-3 text-center">
+                    <div style="background-color: whitesmoke; border-radius: 50%; width: 70px; height: 70px; display: inline-flex; justify-content: center; align-items: center;">
+                        <img src="img/arrival-time.png" style="height: 40px; width: 40px;" alt="tracking">
+                    </div>
+                    <p>Arrive Safely</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Trusted Ride Sharing Services in All World</p>
+            <button class="btn btn-dark">Read More</button>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <h2>Download RideShare</h2>
+            <p>Download the RideShare mobile application</p>
+            <button class="btn btn-success">Google Play</button>
+            <button class="btn btn-primary">App Store</button>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2>What About Passenger Says</h2>
+            <p>"Amazing service! Highly recommended." - Arafat</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2>Our Blog</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/blog1.jpg" alt="Blog 1" class="img-fluid">
+                    <h4>Blog Title 1</h4>
+                    <p>Blog description goes here.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/blog2.jpg" alt="Blog 2" class="img-fluid">
+                    <h4>Blog Title 2</h4>
+                    <p>Blog description goes here.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/blog3.jpg" alt="Blog 3" class="img-fluid">
+                    <h4>Blog Title 3</h4>
+                    <p>Blog description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5 text-white">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <h5><img src="images/logo.png" alt="CarGo" style="height: 40px;"> CarGo Taxi Service</h5>
+                    <p>
+                        Nulla justo neque, tincidunt id bibendum a, rhoncus et eros. Vestibulum commodo diam ut risus
+                        pulvinar consequat vitae a dui. Maecenas vitae enim lacus.
+                    </p>
+                    <p><strong>Toll Free Helpline:</strong> <br>(+1) 123 4567 890</p>
+                </div>
+    
+                <!-- Useful Links -->
+                <div class="col-md-3">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Our Vehicles</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Packages</a></li>
+                        <li><a href="#" class="text-white">Login</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Head Office -->
+                <div class="col-md-3">
+                    <h5>Head Office</h5>
+                    <p>15 Street No, Ox Building, Near Station, 1356.</p>
+                    <p><strong>Phone Number:</strong> (+1) 123 4567 890</p>
+                    <p><strong>Email Address:</strong> cabgo@gmail.com</p>
+                    <p><strong>Fax:</strong> service@cabgo.com</p>
+                </div>
+    
+                <!-- Mobile App -->
+                <div class="col-md-3">
+                 <!--  <h5>Download Mobile App</h5>
+                    <button class="btn btn-success btn-sm mb-2">Get it on Google Play</button>
+                    <button class="btn btn-primary btn-sm mb-2">Download on App Store</button> -->
+                    <button class="btn btn-outline-light btn-sm mb-2">Become a Driver</button>
+                    <button class="btn btn-outline-light btn-sm">Ride with RideShare</button>
+                </div>
+            </div>
+            <hr class="text-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; Copyright 2025 by RideShare. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- Map Section -->
+<section class="map-section">
+    <div class="container-fluid">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95373631590457!3d-37.81627944202137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727a2b3b76a8b0!2sFederation%20Square!5e0!3m2!1sen!2sbd!4v1613530163964!5m2!1sen!2sbd"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
